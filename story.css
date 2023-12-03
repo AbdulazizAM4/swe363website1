@@ -1,0 +1,61 @@
+body{
+    background-color: #FCFCFC;
+    color: #3F3F3F
+  }
+  
+  a{
+    color: #3F3F3F;
+    text-decoration: none;
+  }
+
+li:not(.Name){
+    display: inline;
+    justify-content: center;
+    margin-left: 50px;
+    background-color: #faebf3;
+    width: 87px;
+    height: 30px;
+}
+li{
+    display: inline;
+}
+nav{
+    text-align: center;
+}
+p::first-letter:not(current){
+    color: #F72D57;
+    font-size: x-large;
+}
+
+img{
+    align-items: center;
+}
+div.image{
+    position: relative;
+    display: inline-block;
+ }
+
+div.image::after {
+    content: "AA";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.date{
+    position: relative;
+}
+
+p.current{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p.mydate{
+    display: inline-block;
+    margin-right: 10px
+}
+

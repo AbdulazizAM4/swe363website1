@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quote</title>
+    </head>
+    <body>
+        <p>Quote For You:</p>
+        <p id="myQuote"></p>
+    </body>
+    <script>
+    const qu = document.getElementById("myQuote")
+ //function getQuote() {
+  //fetch('https://animechan.xyz/api/random')
+    //.then(response => response.json())
+    //.then(data => {
+    //  qu.innerText = data.quote;
+    //});
+    
+  //}
+  //window.onload = getQuote;
+  window.onload = e =>fetch('https://animechan.xyz/api/random')
+    .then(response => response.json())
+    .then(data => {
+      qu.innerText = data.quote;
+    }); 
+    </script>
+</html>

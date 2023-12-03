@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seonimod Pizzeria</title>
+        <meta name = "keywords" content="pizza, food, restaurant, italian">
+        <meta name = "description" content="This is a restaurant website to order pizza.">
+        <meta name="author" content="Abdulaziz Almuhanna">
+        <link rel="stylesheet" href="style.css">
+        <link rel='stylesheet' media='screen and (min-width: 769px)' href='desktop.css' />
+    </head>
+    <body>
+        <div class="loader" id="load"></div>
+        <div id="web">
+        <nav>
+            <ul>
+                <li class="Name"><aside>Seonimod</aside></li>
+                <li class="Icon"><img src="icon.png" width = "30" height = "30" alt="icon"></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="order.html">Order Here</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+        <aside class="logo"> 
+            <div class="image">
+                        <img src="logo.png" width = "400" 
+                        height = "400" alt="logo" >
+            </div>
+        <div class="date">
+        <p class="mark">Order the finest Italian Pizza!</p>
+        <p class="current">1/10/2023</p>
+        </div>
+        </aside>
+        <a href="pizza-ar.html" class="lang">Arabic</a>
+        <a href="game.html" class="lang">Play</a>
+        <a href="quote.html" class="lang">Quote of the Day</a>
+        <a href="screensave.html" class="lang">Screen</a>
+        </div>
+        <div class="alert alert-dark" role="alert">
+            Tab button to navigate the Nav Bar. Enter to Join.
+            <span class="close">Accept</span>
+        </div>
+    </body>
+    <script>
+        class pizza{
+            constructor(type, main_ing){
+                this.type = type
+                this.main_ing = main_ing
+            }
+            getType(){
+                return this.type
+            }
+            getMain(){
+                return this.main_ing
+            }
+        }
+        const pizzaS = new pizza("Truffle Pizza","Truffles")
+        const pizzaR = new pizza("Marghareta", "Cheese")
+        const body = document.body
+        const foot = document.createElement("footer")
+        body.append(foot.innerText = pizzaS.getType())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaS.getMain())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaR.getType())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaR.getMain())
+        const revenue = [20,30,10,45,64]
+        const tax = revenue.map((x) => x * 1.15);
+        console.log(tax)
+        const initialValue = 0;
+        const totalRevenue = tax.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+        console.log(totalRevenue)
+    </script>
+    <script src="key.js"></script> 
+    <script>
+        import React from 'react';
+
+        function HelloWorld() {
+            return <h1>Hello, World!</h1>;
+            }
+
+        export default HelloWorld;
+    </script>
+</html>
+
+

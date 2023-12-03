@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <nav class="Navigation">
+              <li class="Navigation"><a href="pizza-ar.html">الرئيسية</a></li>
+              <li class="Navigation"><a href="order-ar.html">القائمة</a></li>
+              <li class="Navigation">اطلب الآن</li>
+        </nav>
+        <meta charset="utf-8">
+        <title>اطلب الآن!</title>
+        <link rel="stylesheet" href="style-ar.css">
+    </head>
+    <body>
+        <form >
+            <label for="First Name">الاسم الأول</label>
+            <input type="text" name="First Name"
+            id="First Name">
+            <aside><p></p></aside>
+            <label for="Last Name">اسم العائلة</label>
+            <input type="text" name="Last Name"
+            id="Last Name">
+            <aside><p></p></aside>
+            <label for="City">اختر مدينة:</label>
+            <input list="City1" id="City" name="City" placeholder="مثال: الرياض" />
+            <datalist id="City1">
+            <option value="الرياض"></option>
+            <option value="الخبر"></option>
+            <option value="جدة"></option>
+            </datalist>
+            <aside><p></p></aside>
+            <label>اختر الأنواع:</label>
+            <aside><p></p></aside>
+            <label>
+                <input type="checkbox" name="pizza" value="margharita">
+                مارغريتا
+              </label>
+              <br>
+              <label>
+                <input type="checkbox" name="pizza" value="truffle">
+                ترافل
+              </label>
+              <br>
+              <label>
+                <input type="checkbox" name="pizza" value="pepperoni">
+                بيبروني
+              </label>
+              <br>
+              <aside><p></p></aside>
+              <Label for="emailAddress">البريد الإلكتروني:</Label>
+              <input id="emailAddress" type="email" />
+              <aside><p></p></aside>
+              <input type="radio" id="send" name="Send" value="checl"  />
+              <Label for="send">أود تلقي الإعلانات.</Label>
+              <aside><p></p></aside>
+              <input type="submit" value="أرسل الطلب">
+            </form>
+            <p><a href="pizza-ar.html">العودة إلى الصفحة الرئيسية.</a></p>
+          </body>
+          </html>

@@ -1,0 +1,137 @@
+body{
+    background-color: #FCFCFC;
+    color: #3F3F3F
+  }
+  
+  a:not(.lang){
+    color: #3F3F3F;
+    text-decoration: none;
+  }
+
+li:not(.Name):not(.Icon){
+    display: inline;
+    justify-content: center;
+    margin-left: 50px;
+    background-color: #faebf3;
+    width: 87px;
+    height: 30px;
+}
+li{
+    display: inline;
+}
+nav{
+    text-align: center;
+}
+p.mark{
+    color: #3F3F3F;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin-right: 10px;
+}
+aside.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside:not(.logo):not(.list){
+    text-align: left;
+    display: flex;
+    width: 153px;
+    height: 77px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #F72D57;
+    text-align: center;
+    font-family: cursive;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+input.Button:hover{
+    transition-duration: 0.4s;
+    background-color: lightskyblue;
+}
+input{
+    background-color: lightslategray;
+}
+
+nav li:nth-child(3){
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+nav li:nth-child(4){
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+nav li:nth-child(5){
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+nav:hover li{
+    opacity: 1;
+}
+
+div.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid #011526; 
+    border-radius: 50%;
+    animation: roll 2s linear infinite, hider 2s 2s forwards; 
+    z-index: 9999;
+ }
+ 
+ @keyframes roll {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+ }
+ 
+ @keyframes hider {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+ }
+ @keyframes Display {
+    0% { opacity: 0; }
+    100% { opacity: 1; display: inline; }
+ }
+ #web{
+    opacity: 0;
+    animation: Display 2s 2s forwards;
+ }
+
+ div.image{
+    position: relative;
+    display: inline-block;
+ }
+
+div.image::after {
+    content: "AA";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.date{
+    position: relative;
+}
+
+p.current{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
